@@ -16,6 +16,7 @@ frappe.listview_settings['Purchase Invoice'] = {
                 fieldtype: "Data",
                 label: __("Item Name"),
                 doctype: "Purchase Invoice Item",
+                condition: "like",
                 onchange: function () {
                     listview.refresh();
                 },
@@ -25,6 +26,7 @@ frappe.listview_settings['Purchase Invoice'] = {
                 fieldtype: "Data",
                 label: __("Description"),
                 doctype: "Purchase Invoice Item",
+                condition: "like",
                 onchange: function () {
                     listview.refresh();
                 },

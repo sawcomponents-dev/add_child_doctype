@@ -16,6 +16,7 @@ frappe.listview_settings['Purchase Order'] = {
                 fieldtype: "Data",
                 label: __("Item Name"),
                 doctype: "Purchase Order Item",
+                condition: "like",
                 onchange: function () {
                     listview.refresh();
                 },
@@ -25,6 +26,7 @@ frappe.listview_settings['Purchase Order'] = {
                 fieldtype: "Data",
                 label: __("Description"),
                 doctype: "Purchase Order Item",
+                condition: "like",
                 onchange: function () {
                     listview.refresh();
                 },
